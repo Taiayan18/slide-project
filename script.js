@@ -1,4 +1,6 @@
 let images=document.querySelector("#images")
+let next=document.querySelector("#next")
+let prv=document.querySelector("#prv")
 
 let img=[
     "https://picsum.photos/id/12/1000/700",
@@ -16,6 +18,33 @@ function show(){
 }
 
 show()
+
+
+next.addEventListener("click",()=>{
+count ++ 
+
+if(count === img.length)
+count =0
+
+
+show()
+})
+
+
+prv.addEventListener("click",()=>{
+
+
+if(count === 0)
+count =img.length
+
+count --
+
+show()
+})
+
+
+
+
 
 setInterval(()=>{
     count ++
