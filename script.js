@@ -54,17 +54,6 @@ setInterval(()=>{
 },3000)
 
 
-let connect=document.getElementById("connect")
-let btn=document.getElementById("btn")
-
-
-setTimeout(()=>{
-    connect.style.display="flex"
-},5000)
-
-btn.addEventListener("click",()=>{
-    connect.style.display="none"
-})
 
 
 
